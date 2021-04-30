@@ -1,0 +1,68 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  font-family: sans-serif;
+  background-image: url(http://picsum.photos/1920);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 10%;
+}
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5% 5%;
+  display: flex;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.owl-carousel .owl-item img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px;
+  height: 150px;
+  width: 150px;
+}
+h1 {
+  justify-content: center;
+  display: flex;
+  padding: 15px;
+}
+
+h2 {
+  justify-content: center;
+  display: flex;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    flex-direction: column;
+  }
+}
+
+img {
+  border-radius: 50%;
+}
